@@ -17,7 +17,7 @@ This application allows users to easily generate an awesome README.md file in th
 npm i inquirer && npm i util
 
 ## Usage
-run node index.js after cloning the repo. View this video  https://watch.screencastify.com/v/HOhr26zk66twtCcWGkie for a walkthrough of how the application works! the video is also saved in (./src/walkthrough.webm)
+run node index.js after cloning the repo. View this video  https://watch.screencastify.com/v/HOhr26zk66twtCcWGkie for a walkthrough of how the application works! the video is also saved in (./src/walkthrough.webm) ![gifwalkthrough](https://github.com/sarahwesley/readme-generator/blob/main/src/walkthrough.gif)
 
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
