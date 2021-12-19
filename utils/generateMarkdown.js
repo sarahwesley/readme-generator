@@ -46,7 +46,7 @@ ${renderLicenseLink(data)}
 ## Project Description
 ${data.description}
 
-## Table of Contents
+# Table of Contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -74,11 +74,9 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions?
-${data.questions}<br />
-<br />
 Find me on GitHub: [${data.username}](https://github.com/${data.username})<br />
 <br />
-✉️ Email me with any questions: ${data.email}<br /><br />
+✉️Email me with any questions: ${data.email}<br /><br />
 `;
 }
 
