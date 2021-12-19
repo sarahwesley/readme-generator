@@ -20,17 +20,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: "What is your GitHub repo name?",
-        name: 'repo',
-        validate: function (answer) {
-            if (answer.length < 1) {
-                return console.log("Please enter a valid Github repo.");
-            }
-            return true;
-        }
-    },
-    {
-        type: 'input',
         message: "What is the title of your project?",
         name: 'title',
         validate: function (answer) {
@@ -74,7 +63,7 @@ const questions = [
     {
         type: 'list',
         message: "Choose a license for your project.",
-        choices: ['MIT License', 'Boost Software License 1.0', 'The Unlicense', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0'],
+        choices: ['MIT', 'Apache 2.0', 'GPLv3'],
         name: 'license'
     },
     {
@@ -106,9 +95,9 @@ function writeToFile(fileName, data) {
 async function init() {
     try {
         // prompt questions
-        const answers = await inquirer.prompt(questions);
-        console.log("your answers:", answers);
-        const generateAnswers = generateMarkdown(answers);
+        const data = await inquirer.prompt(questions);
+        console.log("your answers:", data);
+        const generateAnswers = generateMarkdown(data);
 
         // write readme file to dist folder
         await writeFileAsync('./dist/README.md', generateAnswers);
